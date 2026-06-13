@@ -1,5 +1,10 @@
 # ⚡ LM2596 5V Buck Converter PCB
 
+![KiCad](https://img.shields.io/badge/Design-KiCad-314CB0?style=flat-square&logo=kicad&logoColor=white)
+![PCB](https://img.shields.io/badge/Type-PCB%20Hardware-2b7489?style=flat-square)
+![Regulator](https://img.shields.io/badge/IC-LM2596S--5.0-f39c12?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-3da639?style=flat-square)
+
 ## 📌 Overview  
 This is a **PCB design** for a **5V Buck Converter**, created using **KiCad**. The circuit is based on the **LM2596S-5.0** fixed-voltage regulator and is ideal for efficiently stepping down higher DC voltages (like 7V–35V) to a stable 5V output for microcontrollers, sensors, and other electronics.
 
