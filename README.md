@@ -13,22 +13,31 @@ This is a **PCB design** for a **5V Buck Converter**, created using **KiCad**. T
 - **Output Voltage**: 5V DC (regulated)  
 - **Regulator IC**: LM2596S-5.0  
 - **Indicators & Filtering**:  
-  - **Input Side**:  
-    - 600µF and 1µF capacitors in parallel for input voltage filtering  
-  - **Output Side**:  
-    - 330µF and 1µF capacitors in parallel for output voltage smoothing  
-    - LED with 4.7kΩ resistor (for output voltage indication)  
-- **Protection & Efficiency**:  
-  - SS34 Schottky diode for fast recovery and high efficiency  
-  - 33µH inductor for stable current regulation  
-- **Connectors**:  
-  - Screw terminals for easy input and output connections
+  - **Input Side**: 600µF and 1µF capacitors in parallel for input voltage filtering  
+  - **Output Side**: 330µF and 1µF capacitors in parallel for output smoothing; LED with 4.7kΩ resistor (output indication)  
+- **Protection & Efficiency**: SS34 Schottky diode; 33µH inductor for stable current regulation  
+- **Connectors**: Screw terminals for input and output
 
-## 📂 Project Files  
-- **Schematics** → `/Schematics/`  
-- **PCB Layout** → `/PCB_Design/`  
-- **Gerber Files** → `/Gerber_Files/` (for manufacturing)  
-- **Images** → `/Images/` (renders & screenshots)  
+## 🧾 Bill of Materials
+| Component | Value / Part | Qty |
+|-----------|--------------|:---:|
+| Buck regulator IC | LM2596S-5.0 | 1 |
+| Schottky diode | SS34 | 1 |
+| Inductor | 33 µH | 1 |
+| Input filter capacitors | 600 µF, 1 µF | 2 |
+| Output filter capacitors | 330 µF, 1 µF | 2 |
+| Indicator LED | — | 1 |
+| LED series resistor | 4.7 kΩ | 1 |
+| Screw terminals | 2-pin | 2 |
+
+> Derived from the design specifications above.
+
+## 📂 What's in this repo
+- **`Images/`** — rendered schematic, PCB layout, and 3D views
+- **`Schematics/`**, **`PCB_Design/`** — exported PNG views of the schematic and layout
+- **`Gerber_Files/`** — ready-to-manufacture Gerbers (`Gerber Files.zip`)
+
+> Note: this repo ships the rendered **images** and the manufacturing **Gerbers**. The editable KiCad project files (`.kicad_pro` / `.kicad_sch` / `.kicad_pcb`) are not included.
 
 ## 🖼️ Preview Images  
 | Schematic | PCB Layout | 3D Render |
@@ -36,9 +45,9 @@ This is a **PCB design** for a **5V Buck Converter**, created using **KiCad**. T
 | ![Schematic](Images/Schematic.png) | ![PCB](Images/PCB_Layout.png) | ![3D](Images/3d_render1.png) |
 
 ## 🔧 How to Use  
-1️⃣ **Open the KiCad files** in `/Schematics/` and `/PCB_Design/`.  
-2️⃣ **Review or customize the design** as per your requirements.  
-3️⃣ **Generate the Gerber files** from `/PCB_Design/` and use `/Gerber_Files/` to order your PCB from a manufacturer.
+1️⃣ **Review the design** from the schematic and PCB images in `Images/`.  
+2️⃣ **Order the board** by sending `Gerber_Files/Gerber Files.zip` to any PCB manufacturer.  
+3️⃣ **Assemble** using the Bill of Materials above.
 
 ## 🙏 Credits  
 This project was created with the help of tutorials from the **[Ampnics YouTube Channel](https://www.youtube.com/@ampnics)**. Big thanks for their awesome content!
